@@ -169,6 +169,9 @@ if __name__ == '__main__':
         print("CUDA is not available, proceeding without it...")
         args.cuda = False
 
+    args.path = "./data/UCRArchive_2018"
+    args.dataset = "Mallat"
+
     train, train_labels, test, test_labels = load_UCR_dataset(
         args.path, args.dataset
     )
